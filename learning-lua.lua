@@ -54,19 +54,23 @@
 -- aaaa = my_map(square, lista)
 -- table.foreach(aaaa, print)
 
-teste1 = 'www.codewars.com#about'
-teste2 = 'www.codewars.com?page=1'
+-- teste1 = 'www.codewars.com#about'
+-- teste2 = 'www.codewars.com?page=1'
 
 
-function removeUrlAnchor(s)
-    local temp = s:find("#")
-    if temp == nil then
-        return s
-    else
-        return s:sub(1,temp-1)
-    end
-end
+-- function removeUrlAnchor(s)
+--     local temp = s:find("#")
+--     if temp == nil then
+--         return s
+--     else
+--         return s:sub(1,temp-1)
+--     end
+-- end
 
-print(removeUrlAnchor(teste1))
-print(removeUrlAnchor(teste2))
+-- print(removeUrlAnchor(teste1))
+-- print(removeUrlAnchor(teste2))
 
+local myMod = require("module-test")
+
+print(myMod.hi("A"))
+print(myMod.add(1, 5))
